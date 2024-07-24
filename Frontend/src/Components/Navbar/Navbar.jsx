@@ -15,11 +15,11 @@ export default function Navbar() {
 
   return (
     <div className="container w-full mx-auto flex flex-row m-4 h-14 justify-between items-center ">
-      <div className=""><img src="/src/assets/v (2).png" className="h-20" alt="" /></div>
+      <div className=""><img src="/src/assets/v (2).png" className="h-12 rounded-full" alt="" /></div>
       <div className="flex nav">
-        <ul className={` flex gap-7 items-center justify-center ${isMenuOpen ? 'nav-link show' : 'nav-link'}`}>
+        <ul className={` flex gap-7 items-center justify-center text-white ${isMenuOpen ? 'nav-link show' : 'nav-link'}`}>
           <li>
-            <NavLink to='/home' activeClassName="active">Home</NavLink>
+            <NavLink to='/home' activeClassName="active ">Home</NavLink>
           </li>
           <li>
             <NavLink to='/services' activeClassName="active">Services</NavLink>
@@ -31,7 +31,7 @@ export default function Navbar() {
             <NavLink to='/contact' activeClassName="active">Contact</NavLink>
           </li>
         </ul>
-        <div className="menu text-3xl" onClick={toggleMenu}>
+        <div className="menu text-3xl text-white" onClick={toggleMenu}>
           {isMenuOpen ? <IoClose /> : <RxDropdownMenu />}
         </div>
       </div>
