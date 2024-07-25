@@ -1,0 +1,33 @@
+.active {
+    color: red;
+}
+.nav ul li a:not(.active):hover{
+    color: #7a6161;
+}
+.menu{
+    display: none;
+} 
+
+@media (max-width: 768px) {
+    .nav .nav-link {
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #f0ecec;
+      position: absolute;
+      width: 350px;
+      height: 60vh;
+      top: -800px;
+      right: 0;
+      z-index: 10;
+      transition: all 0.5s ease-in;
+    }
+  
+    .nav-link.show{
+        top: 15%;
+        transition: all 0.5s ease-in;
+    }
+    
+    .menu {
+      display: block;
+    }
+  }
