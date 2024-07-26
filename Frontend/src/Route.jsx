@@ -6,7 +6,7 @@ export default function Route() {
   return (
     <main>
       <header>
-        <Navbar />
+        <Navbar  />
       </header>
       <Outlet />
       <footer>
