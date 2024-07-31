@@ -2,26 +2,19 @@ import React from "react";
 import Skill from "../Skills/Skill";
 import Projects from "../Projects/Projects";
 import Home from "../Home/Home";
+import ScrollManager from "../ScrollManager/ScrollManager";
 
 export default function Hero() {
   return (
     <>
-      <section className="h-screen">
-          <Home/>
-      </section>
 
-      <section className="h-screen">
-        <Skill />
-      </section>
+      <ScrollManager/>
 
-      <section className="h-screen">
-        <Projects />
-      </section>
+      <Home />
+ 
+      <Skill />
 
-      <section className="h-screen">
-        <Skill />
-      </section>
-
+      <Projects/>
 
     </>
   );
