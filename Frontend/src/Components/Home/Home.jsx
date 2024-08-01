@@ -1,8 +1,11 @@
 import React from "react";
+import { Element } from "react-scroll";
 
 function Home() {
   return (
-    <div className="container mx-auto w-full content grid grid-cols-2">
+    <Element name="home" id="home">
+      <section className="h-screen" >
+      <div className="container mx-auto w-full content grid grid-cols-2">
       <div className="left_content flex flex-col items-center justify-center text-center p-10  text-white h-screen">
           <div className="max-w-2xl">
             <div className="text-4xl md:text-6xl font-bold mb-4 ">
@@ -28,6 +31,8 @@ function Home() {
       </div>
       <div className="right_content  justify-center items-center "></div>
     </div>
+    </section>
+    </Element>
   );
 }
 
