@@ -13,8 +13,8 @@ export default function Navbar() {
   };
 
   return (
-    <div className="container  mx-auto">
-      <div className="fixed flex container mx-auto flex-row pt-6 h-14 justify-between items-center">
+    <div className="container  mx-auto min-h-screen ">
+      <div className="fixed flex container mx-auto flex-row pt-6 justify-between items-center">
         <div className="">
           <img
             src="/src/assets/v (2).png"
